@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Laboratorium: Informatyka II</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">STANISŁAW FEDCZUK</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                    </li>
+                    <li>
+                        <a href="laboratory.html">Laboratorium</a>
+                    </li>
+                    <li>
+                        <a href="homeworks.html">Zadania</a>
+                    </li>
+                    <li>
+                        <script type="text/javascript">
+  document.write("<a href=\"mail" + "to:" + new Array("stanislaw.fedczuk","gmail.com").join("@") + "\">" + new Array("Kon","takt").join("") + "</" + "a>");
+</script>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>Zadania</h1>
+                        <hr class="small">
+                        <span class="subheading">Treści zadań do samodzielnego wykonania w domu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <p class="text-justify">
+          Poniżej znajdują się zadania do samodzielnego wykonania w domu. Programy należy wysłać na adres mailowy prowadzącego, do końca dnia poprzedzającego termin oddania zadań. Mail powinien być zatytułowany: <code>NAZWISKO NR.INDEKSU P-NR.PROJEKTU Z-NR.ZADANIA</code>. Przykładowy tytuł: <code>KOWALSKI 78654 P-1 Z-4</code>. Każdy kolejny tydzień opóźnienia będzie skutkował sukcesywnym obniżeniem oceny o&nbsp;jeden. W celu uzyskania zaliczenia z&nbsp;przedmiotu wszystkie programy muszą być oddane. Ocenie będzie podlegała, oprócz działania programu, czytelność oraz jakość kodu (nazewnictwo zmiennych, konsekwencja w&nbsp;przyjętym sposobie nazewnictwa, formatowanie, podział kodu na logiczne struktury, brak powtórzeń kodu).</p>
+
+          <p>
+          <strong>Termin oddania zadań 1-4: 2016-03-23.</strong>
+          </p>
+          <hr/>
+          <h3>1. Wisielec</h3>
+          <p class="text-justify">Wisielec to gra polegająca na odgadywaniu słów. Jeden z graczy wymyśla słowo, które zapisuje na tablicy w formie podkreśleń reprezentujących ilość liter w&nbsp;słowie. Zadaniem reszty graczy jest odgadnąć to słowo, podając za każdym razem pojedyńczą literę. W przypadku podania litery, która nie znajduje się w&nbsp;słowie, autor zagadki dorysowuje kolejne elementy szubienicy. Wygrywa ten, kto szybciej dopnie swego: zgadujący, bądź wieszający. Twoim zadaniem jest napisanie programu umożliwiającego zagranie w&nbsp;wisielca z&nbsp;komputerem. </p>
+
+          <p class="text-justify">
+          W pliku tekstowym, zapisanym w sposób pokazany poniżej, znajduje się lista słów (bez polskich znaków) oraz liczba określająca ile razy możemy próbować odgadnąć słowo.
+          <pre>
+  wisielec 12 
+  kat 10
+  komputer 15</pre>
+          Działanie programu po uruchomieniu powinno wyglądać następująco:
+          <ol>
+            <li>Program ładuje plik ze słowami o nazwie <em>slowa.txt</em>.</li>
+            <li>Program pyta gracza o imię.</li>
+            <li>Program losuje słowo i wyświetla na ekranie tyle znaków podkreślenia ile ma wylosowane słowo oraz ilość pozostałych prób.</li>
+            <li>Gracz wprowadza kolejne litery, jeśli znajdują się w słowie, powinny się pojawić na odpowiednich miejscach w słowie, w przeciwnym razie licznik pozostałych prób powinien się sukcesywnie zmniejszać.</li>
+            <li>Po podaniu ostatniej brakującej litery program program wyświetla: <code>BRAWO, ZGADLES!</code>.</li>
+            <li>Gdy limit prób się wyczerpał i gracz nie odgadł słowa, program wyświetla komunikat i szukane słowo: <code>NIE UDALO SIE, SZUKANE SLOWO TO: KOT</code>.</li>
+            <li>Program pyta użytkownika, czy ma ochotę zagrać ponownie. Gdy gracz odpowie twierdząco powracamy do punktu 2. W przeciwnym razie program zapisuje do pliku <em>statystyka.txt</em> dokonania gracza zawierające: imie, ilość odgadnietych oraz nieodgadniętych słów, w sposób podany poniżej.</li>
+          </ol>
+<pre>
+  ania 7 1
+  jan 20 3
+  krzys 9 0</pre>
+          </p>
+          <hr/>
+          <h3>2. Genetyczny Hello World!</h3>
+          <p class="text-justify"><a href="https://en.wikipedia.org/wiki/Genetic_algorithm">Algorytmy genetyczne</a> to świetny przykład zastosowania elementów biologii dotyczących teorii ewolucji w&nbsp;informatyce, szczególnie w problemach optymalizacjnych. Zasada działania jest dość prosta: na początek w sposób losowy generujemy pewną liczbę osobników reprezentujących nasz problem, tzw. społeczność, następnie osobniki z tej społeczności podlegają losowo operacjom mutacji oraz reprodukcji w wyniku czego powstaje nowa, potomna społeczność, zastępująca starą. Algorytm kończy działanie po określonej liczbie takich cykli. Najlepszy osobnik z ostatniej wygenerowanej społeczności traktowany jest jako rozwiązanie. Istnieją również inne warianty oraz rozszerzania powyższego algorytmu.</p>
+          <p class="text-justify">
+            Twoim zadaniem jest napisanie programu, który w sposób ewolucyjny, wykorzystując operację mutacji, dopasuje losowo wygenerowane słowo do wzorca wskazanego przez użytkownika. W pliku tekstowym, zapisanym w&nbsp;sposób pokazany poniżej, znajduje się lista słów oraz sformułowań (nie dłuższe niż 16 znaków, wyłącznie małe litery, bez polskich znaków), które będą służyły jako poszukiwany wzorzec tekstu.
+            
+            <pre>
+  hello world
+  witaj swiecie
+  ciao mondo</pre>
+          Działanie programu po uruchomieniu powinno wyglądać następująco:
+          <ol>
+            <li>Program ładuje plik ze słowami o nazwie <em>slowa.txt</em>.</li>
+            <li>Program wyświetla wszystkie słowa na ekranie.</li>
+            <li>Program pyta użytkownika o numer słowa, które będzie stanowiło poszukiwany wzorzec.</li>
+            <li>Program generuje drugie słowo o takiej samej ilości znaków, które są wybierane losowo.</li>
+            <li>Następnie w pętli program losuje znak oraz losuje miejsce w które wstawi wylosowaną literę.</li>
+            <li>Program nie podmienia znaków, które pokrywają się ze wzorcem.</li>
+            <li>Pętla kończy się w momencie, gdy wszystkie litery pokrywają się ze wzorcem.</li>
+            <li>Na koniec program dopisuje do pliku <em>statystyka.txt</em> szukany wzorzec oraz liczbę przebiegów pętli potrzebnych do jego dopasowania, w sposób pokazany poniżej.</li>
+          </ol>
+          <pre>
+  hello world 78
+  witaj swiecie 94
+  ciao mondo 67</pre>
+          </p>
+          <hr/>
+          <h3>3. Problem komiwojadżera</h3>
+          <p class="text-justify"><a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Problem komiwojadżera</a> stanowi jeden ze sztandarowych problemów kombinatorycznych. Komiwojadżer, inaczej sprzedawca ma do odwiedzenia pewnych klientów, którzy znajdują się w różnych miastach. Trzeba znaleźć najkrótszą trasę, która obejmuje wszystkie miasta. Problem mimo iż wydaje się prosty, przy większej ilości klientów nie daje się rozwiązać w rozsądnym czasie poprzez analizę wszystkich możliwych kombinacji tras. Jedną z metod rozwiązywania tego problemu jest wykorzystanie algorytmu o&nbsp;nazwie <a href="https://en.wikipedia.org/wiki/Hill_climbing"><em>hill climbing</em></a>, który działając losowo, stara się stopniowo przybliżać do najlepszego rozwiązania.</p>
+          <p class="text-justify">
+            Twoim zadaniem jest napisanie programu, który dla danego zbioru punktów w&nbsp;przestrzeni euklidesowej, reprezentujących poszczególnych klientów, spróbuje znaleźć najkrótszą trasę. Dystans pomiędzy punktami należy wyznaczyć korzystając z <a href="https://en.wikipedia.org/wiki/Euclidean_distance">odległości euklidesowej</a>. W pliku tekstowym, zapisanym w&nbsp;sposób pokazany poniżej, znajdują się punkty reprezentujące poszczególnych klientów.
+            <pre>
+  1.0 1.0
+  5.0 2.0
+  3.0 4.0</pre>
+          Działanie programu po uruchomieniu powinno wyglądać następująco:
+          <ol>
+            <li>Program ładuje plik zawierający punkty <em>klienci.txt</em>.</li>
+            <li>Program wyświetla ilość punktów w pliku oraz liczbę wszystkich możliwych kombinacji.</li>
+            <li>Użytkownik wprowadza liczbę kombinacji, które program ma przeanalizować.</li>
+            <li>Program generuje losową kolejność odwiedzanych klientów.</li>
+            <li>W pętli, program zamienia miejscami odwiedzane miasta.</li>
+            <li>Co 10 przebiegów pętli program wyświetla komunikat informujący która kombinacja jest aktualnie analizowana oraz długość aktualnie najlepszej trasy np. <code>ANALIZUJE: 20/55; DYSTANS: 34.6</code>.</li>
+            <li>Gdy nowa trasa jest krótsza od obecnie najlepszej, nowa trasa staje się najlepszą.</li>
+            <li>Pętla kończy się, gdy program przeanalizuje określoną wcześniej liczbę kombinacji.</li>
+            <li>Program zapisuje do pliku <em>trasa.txt</em> kolejność odwiedzanych klientów, w&nbsp;sposób pokazany poniżej.</li>
+          </ol>
+          <pre>1 3 2</pre>
+          </p>
+          <hr/>
+
+          <h3>4. Konwerter Braille'a</h3>
+          <p class="text-justify"><a href="https://en.wikipedia.org/wiki/Braille">Alfabet Braille'a</a> powzala obcować ze słowem pisanym osobom niewidomym. Został stworzony przez Louisa Braille'a, na bazie wojskowego systemu notacji pozwalającego na odczytywanie komunikatów w&nbsp;ciemności, bez użycia światła. Alfabet opiera się na kombinacji sześciu wypukłych punktów ułożonych w&nbsp;dwóch kolumnach, po trzy w każdej, co pozwala  zakodować 63 znaki. Istnieją również rozszerzenia pozwalajace na zapis nut, symboli matematycznych, fizycznych oraz chemicznych.</p>
+          <p class="text-justify">Twoim zadaniem jest napisanie aplikacji pozwalającej na konwersję pomiędzy alfabetem łacińskim a&nbsp;alfabetem Braille'a, który zakodujemy za pomocą symboli: 'O' - wypukłość (czarna kropka) oraz '.'&nbsp;-&nbsp;brak wypukłości (biała kropka). Każdy zakodowany znak składa się z macierzy 3x2 i jest oddzielony spacją. Ponizej pokazano przykładowy tekst zakodowany alfabetem Braille'a wraz z&nbsp;tłumaczeniem:
+<pre>
+O. O. O. O. O. .O O. O. O. OO 
+OO .O O. O. .O OO .O OO O. .O
+.. .. O. O. O. .O O. O. O. ..
+
+helloworld
+</pre>
+
+
+          Działanie programu po uruchomieniu powinno wyglądać następująco:
+          <ol>
+            <li>Program pyta użytkownika o tryb konwersji: Braille&#8594;tekst lub tekst&#8594;Braille.</li>
+            <li>Gdy użytkownik wybrał opcję Braille &#8594; tekst, program pyta o podanie pliku zawierającego tekst zapisany alfabetem Braile'a.</li>
+            <li>Program ładuje podany plik, tłumaczy wiadomość na tekst zapisany w alfabecie łacińskim i&nbsp;wyświetla go na ekranie.</li>
+            <li>W przypadku, gdy użytkownik wybrał tryb tekst &#8594; Braille, sytuacja wygląda analogicznie, z tym, że&nbsp;program prosi o podanie treści wiadomości z klawiatury oraz nazwy pliku, do którego trafi tekst zakodowany Braille'em.</li>
+            <li>Program powinien umożliwiać wielokrotne wykonanie powyższych operacji.</li>
+          </ol>
+          </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer style="padding: 0 0 65px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; SF 2016<br/> Theme by <a href="http://startbootstrap.com">SB</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
