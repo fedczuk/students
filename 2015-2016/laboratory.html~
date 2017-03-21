@@ -29,70 +29,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style type="text/css">
-    .bs-callout {
-        padding: 20px;
-        margin: 20px 0;
-        border: 1px solid #eee;
-        border-left-width: 5px;
-        border-radius: 3px;
-    }
-    .bs-callout h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    .bs-callout p:last-child {
-        margin-bottom: 0;
-    }
-    .bs-callout code {
-        border-radius: 3px;
-    }
-    .bs-callout+.bs-callout {
-        margin-top: -5px;
-    }
-    .bs-callout-default {
-        border-left-color: #777;
-    }
-    .bs-callout-default h4 {
-        color: #777;
-    }
-    .bs-callout-primary {
-        border-left-color: #428bca;
-    }
-    .bs-callout-primary h4 {
-        color: #428bca;
-    }
-    .bs-callout-success {
-        border-left-color: #5cb85c;
-    }
-    .bs-callout-success h4 {
-        color: #5cb85c;
-    }
-    .bs-callout-danger {
-        border-left-color: #d9534f;
-    }
-    .bs-callout-danger h4 {
-        color: #d9534f;
-    }
-    .bs-callout-warning {
-        border-left-color: #f0ad4e;
-    }
-    .bs-callout-warning h4 {
-        color: #f0ad4e;
-    }
-    .bs-callout-info {
-        border-left-color: #5bc0de;
-    }
-    .bs-callout-info h4 {
-        color: #5bc0de;
-    }
-    .hr-style {
-      height: 6px;
-      background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-        border: 0;
-    }
-    </style>
-
 </head>
 
 <body>
@@ -119,6 +55,12 @@
                     </li>
                     <li>
                         <a href="laboratory.html">Laboratorium</a>
+                    </li>
+                    <li>
+                        <a href="homeworks.html">Zadania</a>
+                    </li>
+                    <li>
+                        <a href="oceny-public-kolokwium.pdf">Oceny</a>
                     </li>
                     <li>
                         <script type="text/javascript">
@@ -153,10 +95,93 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <h2>Zajęcia 4: <i>Struktury, pliki</i> <small>(2016-03-21)</small></h2>
-                  <hr/>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Zajęcia 11 (2015-05-04)
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
                   <h4>Program 1</h4>
-                  <div class="text-justify">
+                  <p class="text-justify">
+                    Utwórz klasę Liczba Zespolona, zawierającą dwa pola zmiennoprzecinkowe reprezentujące odpowiednio część rzeczywistą i urojoną, a następnie: 
+                    <ol type="a">
+                      <li>przeciąż operatory dodawania, różnicy, mnożenia oraz dzielenia,</li>
+                      <li>wygeneruj wyjątek w przypadku próby dzielenia przez zero,</li>
+                      <li>zaimplementuj prosty kalkulator w oparciu o stworzoną wyżej klasę,</li>
+                      <li>stwórz szablon Macierz przechowujący NxM dowolnych obiektów,</li>
+                      <li>przeciąż operatory sumy oraz mnożenia, uzyskując w ten sposób efekt operacji na macierzach liczb zespolonych,</li>
+                      <li>zaktualizuj kalkulator, aby pozwalał wykonać również operacje na macierzach.</li>
+                    </ol>
+                  </p>
+                  <hr/>
+
+                  <h4>Program 2</h4>
+                  <p class="text-justify">
+                    Utwórz klasę Punkt, zawierającą dwa pola zmiennoprzecinkowe reprezentujące odpowiednio wartość x i y na płaszczyźnie kartezjańskiej, a&nbsp;następnie:
+                    <ol type="a">
+                      <li>utwórz klasę Wektor zawierającą dwa pola typu Punkt, określające odpowiednio początek oraz koniec wektora,</li>
+                      <li>przeciąż operatory dodawania, różnicy oraz iloczynu (wektorowego)</li>
+                      <li>zaimplementuj prosty kalkulator wektorów,</li>
+                      <li>utwórz klasę Punkt3D na podstawie klasy Punkt,</li>
+                      <li>dodaj szablon Tensor drugiego rzędu przechowujący N dowolnych obiektów,</li>
+                      <li>przeciąż operator sumy,</li>
+                      <li>zaktualizuj kalkulator, aby pozwalał wykonać również operacje na tensorach.</li>
+                    </ol>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Zajęcia 10 (2015-04-27)
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  <h4>Program 1</h4>
+                  <p class="text-justify">
+                    Utwórz klasę abstrakcyjną Kształt zawierającą dwa pola zmiennoprzecinkowe:
+                    <ol type="a">
+                      <li>dodaj metodę wirtualną pole,</li>
+                      <li>utwórz klasy pochodne Trojkat i Prostokat, zaimplementuj w nich metodę wirtualną liczącą pole figury,</li>
+utwórz klasę pochodną Prostopadloscian z klasy Prostokat, dodaj pole określające wysokość figury, dodaj funkcje liczącą objętość i <li>                     zmodyfikuj liczenie pola powierzchni,</li>
+                      <li>pobierz N figur z klawiatury i zapisz je w tablicy,</li>
+                      <li>dla każdej z figur wyświetl: rodzaj figury, pole, objętość (jeśli posiada).</li>
+                    </ol>
+                  </p>
+                  <hr/>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Zajęcia 5 (2015-03-23)
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <h4>Program 1</h4>
+                  <p class="text-justify">
                     Napisz program, który wczyta liczbę całkowitą N podaną z klawiatury. Rozbuduj go o następujące możliwości (punkty 2-9 zrealizuj w formie funkcji):
                     <ol type="a">
                       <li>utwórz strukturę przechowującą poniższe dane opisujące pojazd:</li>
@@ -177,11 +202,11 @@
                       <li>określ, czy samochód o podanej marce, modelu i rodzaju silnika znajduje się w bazie,</li>
                       <li>dodaj menu pozwalające użytkownikowi wybrać operację do wykonania na podstawie powyższych podpunktów.</li>
                     </ol>
-                  </div>
+                  </p>
                   <hr/>
 
                   <h4>Program 2</h4>
-                  <div class="text-justify">
+                  <p class="text-justify">
                     Napisz program, który wczyta liczbę całkowitą N podaną z klawiatury. Rozbuduj go o następujące możliwości (punkty 2-9 zrealizuj w formie funkcji):
                     <ol type="a">
                       <li>utwórz strukturę przechowującą poniższe dane opisujące komputer:</li>
@@ -196,23 +221,34 @@
                       <li>wyświetl na ekranie wszystkie komputery w bazie,</li>
                       <li>określ, który komputer pobiera najmniej energii,</li>
                       <li>określ, który procesor jest najbardziej popularny,</li>
-                      <li>określ, czy komputer o podanej marce oraz rodzaju procesora znajduje się w&nbsp;bazie,</li>
+                      <li>określ, czy komputer o podanej marce oraz rodzaju procesora znajduje się w bazie,</li>
                       <li>wyznacz czas działania komputerów na baterii, przyjmij stałe napięcie wyjściowe dla wszystkich modeli,</li>
                       <li>określ, który komputer działa na baterii najdłużej,</li>
                       <li>dodaj menu pozwalające użytkownikowi wybrać operację do wykonania na podstawie powyższych podpunktów.</li>
                     </ol>
-                  </div>
-                  <hr/>
-                  <hr class="hr-style" />
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
 
-                  <h2>Zajęcia 3: <i>Pętle i tablice</i> <small>(2016-03-14)</small></h2>
-                  <hr/>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Zajęcia 3 (2015-03-09)
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
                   <h4>Program 1</h4>
-                  <div class="text-justify">
+                  <p class="text-justify">
                     Napisz program, który z klawiatury pobierze liczbę całkowitą o 10 cyfrach. Rozbuduj go o następujące funkcje:
                     <ol type="a">
                         <li>wprowadź poszczególne cyfry do tablicy,</li>
-                        <li>wyświetl cyfry w odwrotnej kolejności,</li>
+                        <li>wyświetl wprowadzone liczby w odwrotnej kolejności,</li>
                         <li>sprawdź, czy cyfra podana z klawiatury znajduje się w tablicy, </li>
                         <li>policz sumę wprowadzonych cyfr,</li>
                         <li>policz iloczyn wprowadzonych cyfr,</li>
@@ -221,105 +257,68 @@
                         <li>wyświetl sumę liczb parzystych i nieparzystych,</li>
                         <li>zlicz ile razy każda z cyfr występuje w tablicy,</li>
                         <li>policz średnią oraz odchylenie standardowe wprowadzonych cyfr,</li>
-                        <li>sprawdź, ile spośród wprowadzonych liczb jest liczbą pierwszą oraz wyświetl je.</li>
+                        <li>sprawdź, ile spośród wprowadzonych liczb jest liczbą pierwszą oraz wyświetl je,</li>
+                        <li>przerób program, aby pobierał 10 liczb zmiennoprzecinkowych i dalej realizował powyższe podpunkty, jakich funkcji nie da się przerobić?</li>
                     </ol>
-                  </div>
+                  </p>
                   <hr/>
 
                   <h4>Program 2</h4>
-                  <div class="text-justify">
-                    <div class="bs-callout bs-callout-danger">
-                      <h4>Zadanie domowe</h4>
-                      Kod źródłowy z rozwiązaniem prześlij na mój <u><script type="text/javascript">document.write("<a href=\"mail" + "to:" + new Array("stanislaw.fedczuk","gmail.com").join("@") + "\">" + new Array("adres","email").join(" ") + "</" + "a>");</script></u> do <strong>20 marca 2017 (poniedziałek) do godziny   20</strong>. Pamiętaj o nazywaniu zmiennych zgodnie z&nbsp;ich przeznaczeniem oraz o przejrzystym formatowaniu kodu.
-                    </div>
+                  <p class="text-justify">
                     Napisz program, który z klawiatury pobierze ciąg znaków i zapisze do tablicy. Rozbuduj program o następujące funkcje:
                     <ol type="a">
-                        <li>policz ile znaków wprowadzono,</li>
                         <li>wyświetl numeryczny kod ASCII każdego znaku,</li>
                         <li>wyświetl ciąg znaków w odwrotnej kolejności,</li>
                         <li>przerób pętle z podpunktu wyżej na pętlę while,</li>
                         <li>wyświetli ile liter jest małych, a ile dużych,</li>
                         <li>zamień litery małe na duże i odwrotnie,</li>
                         <li>policz ile razy dana litera występuje we wprowadzonym słowie,</li>
-                        <li>policz ile słów znajduje się we wprowadzonym ciągu znaków,</li>
                         <li>sprawdź, czy słowo podane z klawiatury zawiera się we wcześniej wprowadzonym słowie (proszę skorzystać z pętli zagnieżdżonych),</li>
                         <li>sprawdź, czy nowo podane słowo jest anagramem słowa wprowadzonego na początku,</li>
                         <li>przerób powyższy punkt na pętle do-while.</li>
                     </ol>
-                  </div>
-                  <hr class="hr-style" />
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
 
-                  <h2>Zajęcia 2: <i>Warunki</i> <small>(2016-03-07)</small></h2>
-                  <hr/>
-                  <h4>Program 1</h4>
-                  <div class="text-justify">
-                    Wprowadź następujące dane: 
-                    <ul>
-                      <li>wagę [kg],</li>
-                      <li>wzrost [m], </li>
-                      <li>wiek.</li>
-                    </ul>
-                    Wylicz wskaźnik BMI na podstawie wzoru:
-                    $$ BMI = \frac{waga}{wzrost^2} $$
-                    a następnie określ:
-                    <ul>
-                      <li>czy wiek pozwala na wyznaczenie wskaźnika BMI (wiek > 14),</li>
-                      <li>czy wartość mieści się w granicach normy (podać etykietę zgodnie <a href="https://www.bmi-kalkulator.pl/bmi_grafiki/tabela_bmi.gif"><u>tabelą</u></a>),</li>
-                      <li>jaka powinna być prawidłowa waga przy danym wzroście,</li>
-                      <li>ile należy przytyć lub stracić na wadze.</li>
-                    </ul>
-                    <div class="bs-callout bs-callout-default">
-                      <h4>Jak to zepsuć?</h4>
-                      Co się stanie jak wprowadzimy wartości ujemne?
-                    </div>
-                  </div>
-                  <hr class="hr-style" />
 
-                  <h2>Zajęcia 1: <i>Rozgrzewka</i> <small>(2016-02-28)</small></h2>
-                  <hr/>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Zajęcia 2 (2015-03-02)
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
                   <h4>Program 1</h4>
-                  <div class="text-justify">
-                    Wprowadź następujące dane:
-                    <ul>
-                      <li>średnie spalanie [l/100 km], </li>
-                      <li>dystans [km], </li>
-                      <li>cenę za litr benzyny [zł].</li>
-                    </ul>
-                    Wylicz:
-                    <ul>
-                      <li>ile benzyny spalił samochód,</li>
-                      <li>jaki był koszt przejechania całej trasy,</li>
-                      <li>jaki był koszt przejechania 1 kilometra.</li>
-                    </ul>
-                    <div class="bs-callout bs-callout-default">
-                      <h4>Jak to zepsuć?</h4>
-                      Co się stanie jak wprowadzimy wartości ujemne? 
-                    </div>
-                  </div>
+                  <p class="text-justify">Napisz kalkulator wykonujący działania: dodawania, odejmowania, dzielenia, mnożenia, potęgowania i pierwiastkowania. Użytkownik może chcieć zrealizować wiele obliczeń następujących po sobie.</p>
                   <hr/>
+
                   <h4>Program 2</h4>
-                  <div class="text-justify">
-                    Wprowadź liczbę heksadecymalną oraz wyświetl jej wartość dziesiętną.
-                    <div class="bs-callout bs-callout-default">
-                      <h4>Jak to zepsuć?</h4>
-                      Co się stanie gdy zostaną wprowadzone znaki o różnej wielkości?<br/>
-                      Co się stanie, gdy wprowadzone znaki będą spoza zakresu?
-                    </div>
-                  </div>
+                  <p class="text-justify">Napisz program, który wyznacza średnią arytmetyczną, odchylenie standardowe oraz dominantę liczb zmiennoprzecinkowych w zakresie [1 do 1000]. Podanych liczb może być tyle ile wynosi zakres.</p>
                   <hr/>
+
                   <h4>Program 3</h4>
-                  <div class="text-justify">
-                    Wczytaj plik tekstowy i wyświetl jego zawartość.
-                    Zaszyfruj wczytany tekst szyfrem Cezara.
-                    Wypisz zaszyfrowany tekst na ekran i zapisz do pliku.
+                  <p class="text-justify">Napisz program, który losuje jedną liczbę całkowitą z przedziału [1, 100], której nie wyświetla na ekranie. Zadaniem użytkownika jest odgadnięcie tej liczby. Użytkownik może wpisywać liczby aż do skutku. W przypadku gdy trafił, na ekranie powinno się pojawić „TRAFILES”, natomiast podanie liczby ujemnej oznacza, że użytkownik się poddaje – w tym momencie program podaje jaką liczbę wylosował i gra się kończy.</p>
+                  <hr/>
 
-                    <div class="bs-callout bs-callout-default">
-                      <h4>Jak to zepsuć?</h4>
-                      Co się stanie gdy pliku nie będzie lub gdy wpisany klucz będzie za duży?
-                    </div>
-                  </div>
+                  <h4>Program 4</h4>
+                  <p class="text-justify">Przerób powyższy program, aby losował jednocześnie 10 liczb. Użytkownik musi trafić jedną 
+                  z nich.</p>
+                  <hr/>
 
-                  
+
+                  <h4>Program 5</h4>
+                  <p class="text-justify">Napisz program, który wypisze wszystkie liczby pierwsze w zakresie [1, 1000] wykorzystując <a href="https://pl.wikipedia.org/wiki/Sito_Eratostenesa">sito Eratostenesa</a>.</p>
+
+                </div>
+              </div>
+            </div>
                 </div>
             </div>
         </div>
@@ -355,9 +354,6 @@
       ga('create', 'UA-74982161-1', 'auto');
       ga('send', 'pageview');
 
-    </script>
-    <script type="text/javascript" async
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 
 </body>
